@@ -29,7 +29,7 @@ const updateEdiblePlant = async (req, res) => {
   try {
     const { id } = req.params;
     const { name, description } = req.body;
-    const updateEdible = await edibleplantmodel.update({ name: name, description: description }, { where: { id: id } });
+    const updateEdible = await edibleplantmodel.update({ name: name, description: description }, { where: { plant_id: id } });
     return res.status(200).json({ success: true, message: "success", data: updateEdible });
   } catch (error) {
     console.error(error);
