@@ -328,14 +328,14 @@ npm run start
   "message": "string",
   "data": [
     {
-    "id": "integer",
+    "plant_id": "string",
     "name": "string",
     "description": "string",
     "createdAt" : "date",
     "updatedAt" : "date"
     }
     {
-    "id": "integer",
+    "plant_id": "string",
     "name": "string",
     "description": "string",
     "createdAt" : "date",
